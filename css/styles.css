@@ -38,6 +38,9 @@ body{
     color: #000000;
 }
 
+.footerList li {
+  padding: 15px;
+}
 .nav a,
 .footerList a {
   transition: all .5s;
