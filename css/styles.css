@@ -38,10 +38,6 @@ body{
     color: #000000;
 }
 
-.nav li,
-.footerList li {
-  padding: 15px;
-}
 .nav a,
 .footerList a {
   transition: all .5s;
@@ -119,14 +115,16 @@ h2{
   width:100%;
 }
 
-#contact{
+#contact,
+#skills{
   width: 90%;
   padding: 50px 0px;
   margin: 50px auto 100px auto;
   background-color: #fafafa;
 }
 
-#contact h1{
+#contact h1,
+#skills h1{
   text-align: center;
 }
 
@@ -198,7 +196,8 @@ h2{
     clear:left;
   }
 
-  #contact{
+  #contact,
+  #skills{
     width: 50%;
 }
 
