@@ -1,0 +1,247 @@
+/* Body and Navigation */
+/* ********************************* */
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Bungee', regular;
+  color: #222;
+}
+
+.main-nav {
+  width: 100%;
+  background: #ffffff;
+  height: 100px;
+  padding-top: 10px;
+  position: fixed;
+  text-align: center;
+  z-index: 2;
+  top:0;
+  left:0;
+
+}
+
+.nav,
+.footerList {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name,
+.footerList .name {
+    display: block;
+    margin-right: auto;
+    color: #000000;
+}
+
+.nav li,
+.footerList li {
+  padding: 15px;
+}
+.nav a,
+.footerList a {
+  transition: all .5s;
+  color: #0399ff;
+  text-decoration: none;
+}
+.nav a:hover,
+.footerList a:hover {
+  color: #000000;
+}
+
+h1{
+  font-family: 'Bungee Shade', regular;
+}
+
+h1,
+h2{
+  color: #0399ff;
+}
+
+
+/* ********************************* */
+.main-container{
+  display:block;
+  width:100%;
+  height:auto;
+  margin:150px auto;
+}
+
+#studentPicture{
+  padding: 20px;
+  margin: 20px;
+}
+#studentPicture img{
+  width:100%;
+}
+
+#studentInfo{
+  background-color: #f5f5f5;
+  padding:20px;
+  margin:20px;
+}
+
+.portfolio-container{
+  width:100%;
+  height:auto;
+  display:inline-block;
+  position:relative;
+
+}
+
+#portfolio{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#portfolio li {
+  float:left;
+  margin:20px;
+  background-color:#f5f5f5;
+  color: #bdc3c7
+}
+
+
+#portfolio li p{
+  margin: 0;
+  padding: 5%;
+  font-size: 1em;
+  color: #000;
+  text-align: center;
+}
+
+#portfolio img{
+  width:100%;
+}
+
+#contact{
+  width: 90%;
+  padding: 50px 0px;
+  margin: 50px auto 100px auto;
+  background-color: #fafafa;
+}
+
+#contact h1{
+  text-align: center;
+}
+
+
+.main-footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #f5f5f5;
+  border-top:1px solid black;
+  display: block;
+}
+
+/* Media Queries for Breakpoints */
+/* ********************************* */
+
+/* Tablet Size */
+@media only screen and (min-width: 768px) {
+
+.main-container{
+  display:block;
+  width:100%;
+  height:auto;
+  margin:50px auto;
+}
+.main-nav{
+  height:50px;
+}
+
+.main-nav p{
+  float:left;
+  padding-left: 40px;
+}
+
+.nav{
+  float: right;
+  padding-right: 25px;
+}
+
+#portfolio li {
+  width:40%;
+  margin:4.5%;
+  background-color:#f5f5f5;
+  color: #bdc3c7
+}
+
+#studentPicture{
+  width:35%;
+  float:right;
+  margin:0;
+  padding:5px;
+  padding-top: 60px;
+}
+
+#studentPicture img{
+  width:85%;
+}
+
+#studentInfo{
+  width:50%;
+  max-width: 350px;
+  float:left;
+  height: auto;
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 35px;
+}
+
+  #portfolio li:nth-child(2n + 1){
+    clear:left;
+  }
+
+  #contact{
+    width: 50%;
+}
+
+.nav li,
+.footerList li {
+  padding: 15px;
+  padding-right:45px;
+}
+
+.nav .name,
+.footerList .name {
+    padding-left: 45px;
+}
+
+}
+
+/* Desktop Sizes */
+/* ****************************** */
+@media (min-width: 1024px) {
+
+#portfolio li {
+  width:28%;
+  margin:2.5%;
+  background-color:#f5f5f5;
+  color: #bdc3c7
+}
+
+#studentInfo{
+  max-width: 600px;
+}
+
+#studentPicture{
+  padding-top:0px;
+}
+
+#studentPicture img{
+  width:65%;
+}
+
+  #portfolio li:nth-child(2n + 1){
+    clear:none;
+  }
+
+}
+
+/* ****************************** */
