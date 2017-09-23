@@ -18,7 +18,12 @@ body{
   z-index: 2;
   top:0;
   left:0;
+  font-size:1em;
 
+}
+
+.main-nav p{
+  font-size:2em;
 }
 
 .nav,
@@ -159,6 +164,7 @@ h2{
 .main-nav p{
   float:left;
   padding-left: 40px;
+  font-size: 1em;
 }
 
 .nav{
@@ -247,3 +253,10 @@ h2{
 }
 
 /* ****************************** */
+
+@media (max-width: 320px){
+
+    .main-nav{
+      font-size:.8em;
+    }
+}
